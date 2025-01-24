@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;  /* Высота для html и body 100% */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Минимальная высота для тела 100% высоты окна */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 95%;
+    z-index: 0;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 25px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+    position: relative;
+    left: 10px;
+    width: 300px;
+}
+
+.phone img {
+    height: 20px;
+    width: auto;
+}
+
+.phone a {
+    text-decoration: none;
+    color: #666;
+    font-size: 22px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.phone a:hover {
+    color: #007bff;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4A90E2;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 70px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 16px; /* Уменьшаем размер шрифта */
+    color: #555;
+    line-height: 1.5; /* Немного сужаем межстрочный интервал */
+    margin: 15px 70px; /* Уменьшаем отступы сверху и снизу */
+    text-align: justify;
+}
+
+iframe {
+    width: 80%; /* Ширина видео */
+    height: auto; /* Высота автоматически рассчитывается */
+    aspect-ratio: 16 / 9; /* Соотношение сторон 16:9 */
+    display: block; /* Центрируем блок */
+    margin: 20px auto; /* Центрируем с отступами сверху и снизу */
+    border: none; /* Убираем рамку */
+    margin-left: 70px;
+}
+
+footer {
+    background-color: #CAD6EE;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+    color: #666;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #4053b9;
+}

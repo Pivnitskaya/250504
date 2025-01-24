@@ -1,0 +1,818 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('klaksa.png');
+    background-color: white;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #666;
+    margin: 10px 0 30px 0;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 95%;
+    z-index: 0;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 25px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+    position: relative;
+    left: 10px;
+    width: 300px;
+}
+
+.phone img {
+    height: 20px;
+    width: auto;
+}
+
+.phone a {
+    text-decoration: none;
+    color: #666;
+    font-size: 22px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.phone a:hover {
+    color: #007bff;
+}
+
+.klaksa-section {
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 20px;
+}
+
+.klaksa-section h1 {
+    font-size: 46px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    padding-left: 50px;
+}
+
+.klaksa-section p {
+    font-size: 25px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1;
+    padding-left: 50px;
+}
+
+.klaksa-section .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #677EB0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-left: 50px;
+}
+
+.klaksa-section .button:hover {
+    background-color: #4053b9;
+}
+
+.type.of.abatments.page {
+    text-align: center;
+    padding: 70px;
+    margin-bottom: 50px;
+}
+
+.type.of.abatments.page h2 {
+    font-size: 36px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    max-width: 85%;
+    height: auto;
+}
+
+#popular-products {
+    background-image: url('B.png');
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    padding: 70px;
+    text-align: center;
+    color: #666;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.product-card {
+    padding: 0;
+    text-align: center;
+    font-size: 26px;
+    width: 48%;
+    background-color: transparent;
+}
+
+.product-card img {
+    max-width: 90%;
+    height: auto;
+}
+
+.product-card .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product-card .price {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #E984D0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+
+#faq {
+    padding: 40px;
+    padding-left: 15px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('kl 2.png');
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+details {
+    margin-bottom: 15px;
+    max-width: 1000px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+summary {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    list-style: none;
+    border: none;
+    color: #666;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    background-image: url('_.png'); /* Указываем путь к спрайту */
+    background-repeat: no-repeat;
+    background-size: contain; /* Чтобы весь спрайт корректно масштабировался */
+    padding-left: 60px; /* Отступ для иконки */
+}
+
+summary::before {
+    content: '';
+    display: inline-block;
+    width: 25px; /* Ширина иконки */
+    height: 25px; /* Высота иконки */
+    background-position: 0 0; /* Позиция иконки плюса в спрайте */
+    background-size: 100%;
+}
+
+
+details p {
+    padding: 0 20px;
+    font-size: 24px;
+    color: #666;
+    margin: 15px 0;
+}
+
+details[open] {
+    border: 2px solid #ddd;
+}
+
+
+#anodizing {
+    padding: 30px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#anodizing h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.anodizing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.anodizing-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+}
+
+.anodizing-item img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.anodizing-item p {
+    font-size: 24px;
+    color: #666;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#reviews {
+    padding: 40px 20px;
+    background-color: #D2EAF6;
+    text-align: center;
+}
+
+#reviews h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.review {
+    padding: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    grid-template-areas:
+        "review1 review2"
+        "review3 review3"
+        "review4 review5";
+}
+
+.review-content {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+    font-size: 25px;
+    color: #666;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.review .review-content:nth-child(1) {
+    grid-area: review1;
+}
+
+.review .review-content:nth-child(2) {
+    grid-area: review2;
+}
+
+.review .review-content:nth-child(3) {
+    grid-area: review3;
+}
+
+.review .review-content:nth-child(4) {
+    grid-area: review4;
+}
+
+.review .review-content:nth-child(5) {
+    grid-area: review5;
+}
+
+/* Стили для секции с контактной формой */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    justify-content: flex-start;
+    padding: 40px 25px;
+    background-color: #fff; /* Цвет фона секции */
+}
+
+/* Заголовок формы */
+#contact-form .form-header {
+    margin-bottom: 24px;
+}
+
+#contact-form h2 {
+    font-size: 36px;
+    color: #666;
+    font-weight: bold;
+    text-align: left; /* Заголовок выравнивается по левому краю */
+    padding-left: 70px;
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    font-weight: bold;
+    padding-left: 70px;
+
+}
+
+/* Стили для полей формы */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 24px;
+    color: #666;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #CAD6EE;
+}
+
+.form-group textarea {
+    resize: vertical; /* Позволяет менять размер только по вертикали */
+}
+
+/* Кнопка отправки */
+button {
+    background-color: #51699E;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #45a049; /* Потемнение кнопки при наведении */
+}
+
+#footer {
+    background-color: #CAD6EE;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+    color: #666;
+}
+
+#footer p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#footer a:hover {
+    color: #4053b9;
+}
+
+/* Стили по умолчанию для всех экранов (базовые стили остаются) */
+
+/* Стили для мобильных устройств (экраны меньше 768px) */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phone {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .klaksa-section h1,
+    .klaksa-section p {
+        font-size: 18px;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .klaksa-section .button {
+        font-size: 18px;
+        padding: 8px 16px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .products {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    #faq details {
+        font-size: 18px;
+    }
+
+    .review {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "review1"
+            "review2"
+            "review3"
+            "review4"
+            "review5";
+    }
+}
+
+/* Стили для планшетов (экраны от 768px до 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    header {
+        padding: 15px 30px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .klaksa-section h1,
+    .klaksa-section p {
+        font-size: 22px;
+        padding-left: 20px;
+    }
+
+    .klaksa-section .button {
+        font-size: 20px;
+        padding: 10px 18px;
+        margin: 15px auto;
+    }
+
+    .products {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 48%;
+    }
+
+    #faq details {
+        font-size: 20px;
+    }
+
+    .review {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "review1 review2"
+            "review3 review4"
+            "review5 review5";
+    }
+}
+
+/* Маленькие экраны (менее 576px) */
+@media (max-width: 576px) {
+    body {
+        background-size: cover; /* Подгоняем фон под экран */
+    }
+
+    h2 {
+        font-size: 28px;
+        margin: 10px 0 20px 0;
+    }
+
+    header {
+        flex-direction: column; /* Перестраиваем шапку в столбец */
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        height: 40px;
+        margin: 0 0 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column; /* Вертикальное меню */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .phone {
+        flex-direction: column;
+        gap: 10px;
+        width: auto;
+    }
+
+    .klaksa-section h1,
+    .klaksa-section p {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .klaksa-section .button {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .video-container {
+        max-width: 100%; /* Видео растягивается на всю ширину */
+    }
+
+    #popular-products {
+        padding: 40px 10px;
+    }
+
+    .products {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-card {
+        width: 100%; /* Продукты занимают всю ширину */
+        margin-bottom: 10px;
+    }
+
+    #faq {
+        padding: 20px 10px;
+    }
+
+    details p {
+        font-size: 18px;
+    }
+
+    #anodizing {
+        padding: 20px 10px;
+    }
+
+    .anodizing-item {
+        max-width: 100px;
+    }
+
+    #reviews {
+        padding: 20px 10px;
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column; /* Отзывы идут друг за другом */
+        gap: 20px;
+    }
+
+    #contact-form {
+        padding: 20px 10px;
+    }
+
+    #contact-form h2 {
+        font-size: 28px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    form {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #footer {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    #footer p {
+        font-size: 14px;
+    }
+
+    #footer a {
+        font-size: 14px;
+    }
+}
+/* Анимация с пружинкой (для заголовков или текста) */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Применение анимаций */
+h2, p, .klaksa-section h1, .klaksa-section p {
+    animation: bounceIn 1s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Применение анимаций */
+h2, p, .klaksa-section h1, .klaksa-section p {
+    animation: bounceIn 1s ease-out;
+}
+
+
+
+
+
+.
+
+
+
